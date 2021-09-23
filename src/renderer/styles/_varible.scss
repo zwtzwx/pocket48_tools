@@ -1,0 +1,63 @@
+// 红色
+$red-color: #DC143C;
+// 浅粉
+$hot-pink: #FF69B4;
+// 深粉
+$deep-pink: #FF1493;
+// 橙色
+$orange: #FF8C00;
+// 青色
+$cyan: #00FFFF;
+// 绿色
+$green: #32CD32;
+
+// 蓝色
+$blue: #00BFFF;
+
+@mixin main-btn($color) {
+  padding: 0 15px;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  height: 32px;
+  font-size: 14px;
+  // border-radius: 4px;
+  border-radius: 0;
+  background-color: $color;
+  color: #fff;
+  border: 1px solid $color;
+  outline: none;
+  min-width: 110px;
+  cursor: pointer;
+  margin-right: 10px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.radius {
+    border-radius: 4px;
+  }
+}
+
+@mixin plain-btn($color) {
+  padding: 0 15px;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: $color;
+  border: 1px solid $color;
+  outline: none;
+  min-width: 90px;
+  cursor: pointer;
+  margin-right: 10px;
+  &:hover {
+    background-color: $color;
+    color: #fff;
+  }
+  &.radius {
+    border-radius: 4px;
+  }
+}

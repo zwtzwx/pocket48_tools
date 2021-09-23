@@ -1,0 +1,50 @@
+@import './varible';
+
+.btn-main-orange {
+  @include main-btn($orange);
+}
+.btn-plain-orange {
+  @include plain-btn($orange);
+}
+.btn-main-blue {
+  @include main-btn($blue);
+}
+.btn-plain-blue {
+  @include plain-btn($blue);
+}
+.btn-main-red {
+  @include main-btn($red-color);
+}
+.btn-plain-red {
+  @include plain-btn($red-color);
+}
+.btn-main-hotpink {
+  @include main-btn($hot-pink);
+}
+.btn-plain-hotpink {
+  @include plain-btn($hot-pink);
+}
+.btn-main-cyan {
+  @include main-btn($cyan);
+}
+.btn-plain-cyan {
+  @include plain-btn($cyan);
+}
+.btn-main-green {
+  @include main-btn($green);
+}
+.btn-plain-green {
+  @include plain-btn($green);
+}
+.bg-white {
+  background-color: #FFF;
+}
+.font-bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.is-click {
+  cursor: pointer;
+}
